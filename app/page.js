@@ -69,12 +69,12 @@ export default function Home() {
   async function deleteBookmark(id) {
     await supabase.from("bookmarks").delete().eq("id", id);
   }
-
-  return (
-    <>
+return (
+  <>
     <div className="bg"></div>
     <div className="bg bg2"></div>
     <div className="bg bg3"></div>
+
     <div id="app-bg">
       <div className="overlay">
         {!user ? (
@@ -119,6 +119,5 @@ export default function Home() {
         )}
       </div>
     </div>
-  );
-</>
-}
+  </>
+);
