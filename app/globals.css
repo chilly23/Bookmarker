@@ -213,3 +213,40 @@ h1 {
   40% { background: #4285F4; width: 0; height: 0; opacity: 1; }
   100% { background: #4285F4; width: 800px; height: 800px; opacity: 1; }
 }
+
+
+/* ===== Animated Sliding Background ===== */
+
+html, body {
+  height: 100%;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #22c55e 50%, #3b82f6 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.35;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -3;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
