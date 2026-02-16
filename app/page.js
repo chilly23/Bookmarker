@@ -69,6 +69,7 @@ export default function Home() {
   async function deleteBookmark(id) {
     await supabase.from("bookmarks").delete().eq("id", id);
   }
+
 return (
   <>
     <div className="bg"></div>
