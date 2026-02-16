@@ -38,23 +38,8 @@ html, body {
 #app-bg {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(
-    120deg,
-    #020617,
-    #020617,
-    #0f172a,
-    #020617,
-    #020617
-  );
-  background-size: 300% 300%;
-  animation: gradientMove 20s ease infinite;
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 
 .overlay {
   min-height: 100vh;
