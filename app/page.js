@@ -76,7 +76,14 @@ return (
     <div className="bg bg2"></div>
     <div className="bg bg3"></div>
 
+  
     <div id="app-bg">
+  
+
+    <div className="copyright">
+  © Velan · velane929@gmail.com
+</div>
+
       <div className="overlay">
         {!user ? (
           <div className="glass">
